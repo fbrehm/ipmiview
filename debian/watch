@@ -1,0 +1,3 @@
+version=3
+opts="uversionmangle=s/_bundleJRE_Linux_/+/" \
+ftp://Customer$tsdnl:SMCbv$2012@dataharbor.supermicro.com/ipmi/IPMIView_V([0-9a-zA-Z_.]*)\.tar\.gz

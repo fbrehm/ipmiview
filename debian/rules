@@ -1,0 +1,16 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	install -D -m 644 IPMIView20.jar debian/ipmiview/usr/share/java/IPMIView20.jar
+	install -D -m 755 debian/ipmiview-bin debian/ipmiview/usr/bin/ipmiview
+	install -D -m 644 debian/ipmiview.desktop debian/ipmiview/usr/share/applications/ipmiview.desktop
+	install -D -m 644 debian/ipmiview.png debian/ipmiview/usr/share/icons/hicolor/48x48/apps/ipmiview.png
+
+override_dh_compress:
+	dh_compress -X.pdf
+
+override_dh_installchangelogs:
+	dh_installchangelogs ReleaseNote.txt

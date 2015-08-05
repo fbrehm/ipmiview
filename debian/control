@@ -1,0 +1,46 @@
+Source: ipmiview
+Maintainer: Benjamin Drung <benjamin.drung@profitbricks.com>
+Section: admin
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+Homepage: https://gitlab.pb.local/dcops/ipmiview
+Vcs-Browser: https://gitlab.pb.local/dcops/ipmiview
+Vcs-Git: git@gitlab.pb.local:dcops/ipmiview.git
+
+Package: ipmiview
+Architecture: all
+Depends: default-jre | openjdk-8-jre | openjdk-7-jre,
+         ${misc:Depends}
+Description: IPMI View GUI for Supermicro systems
+ IPMI View (IPMI-Over-LAN) is a management software program based on the IPMI
+ specification Reversion 1.5 - 2.0. IPMI View sends IPMI messages to and from
+ the BMC (Base Management Card) on a host system at a remote location. IPMI
+ messages are encapsulated in RMCP (Remote Management Control Protocol) packets
+ called “datagrams.” This method is also referred to as “IPMI-over-LAN.”
+ .
+ According to the Distributed Management Task Force (DMTF) specification, RMCP
+ is used for system management in a pre-OS or an OS-absent environment. RMCP is
+ a simple request-response protocol that can be delivered using UDP (User
+ Datagram Protocol) datagrams. IPMI-over-LAN uses version 1 of the RMCP protocol
+ and packet format. An RMCP packet is transmitted via an IP (Internet Protocol)
+ network, which allows system managers to manage their IPMI-enabled systems over
+ the Internet. In a private LAN network, this is a basic feature. IPMI uses the
+ same UDP port number (623 in decimal) as the ASF (Alert Standard Forum)
+ protocol. If the managed system is protected by a firewall, UDP port 623 must
+ be opened.
+ .
+ In Supermicro’s IPMI solution, a BMC (Baseboard Management Controller) shares
+ the LAN1 NIC on the mainboard. (If there are more than one LAN ports on the
+ mainboard, LAN1 is the one closest to the Keyboard/Mouse port.) The NIC will
+ re-route the IPMI packet to the BMC instead of forwarding it to the upper layer
+ of the network protocol stacks as other protocol packets do.
+ .
+ IPMI View V2.0 covers Supermicro’s BMCs for both IPMI v1.5 and IPMI v2.0.
+ However, due to design changes, some functions may not be available for IPMI
+ v1.5, while others might no longer be available for IPMI v2.0. IPMI View will
+ automatically hide any functions that are not available based on the BMC
+ version used in the system.
+ .
+ The configuration files (*.properties files like IPMIView.properties) will be
+ stored in ~/.config/ipmiview.

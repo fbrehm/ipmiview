@@ -1,0 +1,9 @@
+#!/bin/sh
+set -eu
+
+# IPMIView creates *.properties files in the current working directory
+mkdir -p ~/.config/ipmiview
+cd ~/.config/ipmiview
+
+unset JAVA_TOOL_OPTIONS
+exec java -jar /usr/share/java/IPMIView20.jar "$@"

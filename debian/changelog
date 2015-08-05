@@ -1,0 +1,5 @@
+ipmiview (2.10.2+20150713-0pb1) all; urgency=medium
+
+  * Initial version.
+
+ -- Benjamin Drung <benjamin.drung@profitbricks.com>  Tue, 04 Aug 2015 11:14:17 +0200

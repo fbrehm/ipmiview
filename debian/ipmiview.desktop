@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=IPMIView
+Comment=IPMI View from Supermicro
+TryExec=ipmiview
+Exec=ipmiview
+Icon=ipmiview
+Categories=ComputerScience;Java;System;
+Keywords=Supermicro;IPMI;KVM;
+Terminal=false
+StartupNotify=false
