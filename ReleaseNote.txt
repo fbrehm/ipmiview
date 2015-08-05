@@ -1,0 +1,1609 @@
+IPMIView release notes
+----------------------
+
+-------------------------------------------------------------------------------
+Version 2.10.2 build 150713
+-------------------------------------------------------------------------------
+
+1. Update microblade nodeSensorInfo structure due to FW change
+
+-------------------------------------------------------------------------------
+Version 2.10.2 build 150622
+-------------------------------------------------------------------------------
+ 
+1. Update DIMM ecc location (OEM SEL) for X10QRH
+2. Remove IPv6 information after pressing detect button
+3. Add OK button in "About" dialog
+4. Add scroll bar to "Sensor" frames
+5. Adjust superblade blade data size due to FW version
+
+-------------------------------------------------------------------------------
+Version 2.10.2 
+------------------------------------------------------------------------------- 
+
+1. Fix invoke browser by clicking Supermicro logo issue
+2. Fix User privilege error
+3. Update sel oem sensor type
+4. Update board ID
+5. Fix SuperBlade CMM CPU ID and Memory Speed display error
+6. Support SuperBlade type B10DRG
+7. Support SuperBlade type B10DRT_IBF2, B10DRI_N and B10DRC_N
+8. Add Power Consumption sensor display for X10DRT-P
+9. Add new fan mode PUE3 for X10 platform
+10. Add new blade type B1SA4F and B1SD2 for sensor readings
+11. Add microblade midplane informations
+12. Fix microblade node graceful shutdown function
+13. Support microblade cmm firmware update function
+14. Update sensor limits from non-critical to critical
+15. Remove group management power graceful control functions
+16. Fix Configuration Tip" dialog display error
+17. Fix microblade cmm display error
+
+
+-------------------------------------------------------------------------------
+Version 2.10.1 build 141121
+-------------------------------------------------------------------------------
+
+1. Support Microblade CMM
+2. Update Superblade gigabit switch structure
+3. Show the "Configuration Tip" dialog
+
+-------------------------------------------------------------------------------
+Version 2.9.32.1 build 140722
+-------------------------------------------------------------------------------
+
+1.Update for HP IPMI discovery and connection
+
+-------------------------------------------------------------------------------
+Version 2.9.32 build 140624
+-------------------------------------------------------------------------------
+
+1.Fix UIDLED issue
+2.Fix Session abnormal close issue
+3.Update group management to load individual username/password 
+4.Add B10DRI and B9QR7
+5.Set power cycle delaying time to 1 sec
+
+-------------------------------------------------------------------------------
+Version 2.9.31 build 140403
+-------------------------------------------------------------------------------
+
+1.Updated Supermicro new logo
+
+-------------------------------------------------------------------------------
+Version 2.9.30 build 140318
+-------------------------------------------------------------------------------
+
+1.Updated MicroBlade CMM and MicroBlade Node frimware version check (IssueID=51309)
+2.Added SDR Type 2 to support PS Status Compact SDR
+3.Updated CPU Core Voltage high and low limit for BHQGE and BHDGT
+
+-------------------------------------------------------------------------------
+Version 2.9.29 build 140206
+-------------------------------------------------------------------------------
+
+1.Updated KVM support for B1SA4-F 
+1.Updated AMI X9,B9 firmware update and version check (Verify stage failure)
+   
+-------------------------------------------------------------------------------
+Version 2.9.28 build 131220
+-------------------------------------------------------------------------------
+
+1.Updated for 920P check rule 
+2.Updated PMBus item names
+3.Fixed a workaround for 1K62P power status
+4.Updated input type (DC) for PMBus monitor
+
+-------------------------------------------------------------------------------
+Version 2.9.27 build 131122
+-------------------------------------------------------------------------------
+
+1.Updated iKVM native library (Linux 32bit) 
+2.Updated SOL initial commands for ATEN X9
+3.Updated 10G structure for SuperBlade (CMM V2.2.53 or later)(IssueID=49183)
+4.Update CPU number of memory ecc error (X8 MBs and Bromolow)
+
+-------------------------------------------------------------------------------
+Version 2.9.26 build 131104
+-------------------------------------------------------------------------------
+
+1.Updated BHQG6/E sensors high low limit
+2.Updated PMbus reading for 920P
+3.Updated SOL initial command for ATEN X10
+4.Updated board ID list
+
+-------------------------------------------------------------------------------
+Version 2.9.25 build 130828
+-------------------------------------------------------------------------------
+
+1.Updated iKVM v1.69 r14 (Power control function enabled)
+2.Updated OOB OEM SEL
+3.Updated board ID list
+4.Updated a workaround for unsigned linear data format for PMBus power consumption
+   
+-------------------------------------------------------------------------------
+Version 2.9.24 build 130725
+-------------------------------------------------------------------------------
+
+1.Fixed cannot open more then one KVM to multiple X9 Renesas BMC (AMI firmware)
+
+-------------------------------------------------------------------------------
+Version 2.9.23 build 130709
+-------------------------------------------------------------------------------
+
+1.Added UID control for X9DBS
+
+-------------------------------------------------------------------------------
+Version 2.9.22 build 130625
+-------------------------------------------------------------------------------
+
+1.Added B9DRG-E
+2.Added PMBus(B0,B2,B4,B6) and FRU (A0,A2,A4,A6) addresses for 1K66P
+3.Updated B9DR6, B9DRG and B9DRT sensor table for DIMM temp  
+4.Added SuperBlade OEM event (Shutdown the problematic blade after minutes of CPU over heating)
+
+-------------------------------------------------------------------------------
+Version 2.9.21 build 130610
+-------------------------------------------------------------------------------
+
+1.Fixed ATEN X10,X9 firmware update bug for checking BMC version
+
+-------------------------------------------------------------------------------
+Version 2.9.20 build 130530
+-------------------------------------------------------------------------------
+
+1.Updated version format in X10 firmware update function
+2.Updated X10 configuration for sensor (power failure issue), user and BMCSetting.
+3.Added Session Audit 02h and 03h event
+
+-------------------------------------------------------------------------------
+Version 2.9.19 build 130523
+-------------------------------------------------------------------------------
+
+1.Added X10 ASPEED firmware update preserve configure option
+2.Updated memory ecc location on Trap receiver
+3.Added Heavy IO fan mode
+4.Updated SOL setting for X10 ASPEED
+
+-------------------------------------------------------------------------------
+Version 2.9.18 build 130410
+-------------------------------------------------------------------------------
+
+1.Added X10 ASPEED firmware update function
+2.Updated parameters for ATEN X10 iKVM          
+3.Bug fixed for Linux path of properties file
+4.Removed splash window to speed start up
+
+-------------------------------------------------------------------------------
+Version 2.9.17 build 130123
+-------------------------------------------------------------------------------
+
+1.Added B9DRGX DIMM temp
+2.Added X10 ASPEED GUID
+
+-------------------------------------------------------------------------------
+Version 2.9.16 build 121221
+-------------------------------------------------------------------------------
+
+1.Updated GB 3 & 4 initialized and Error reading (SuperBlade)
+2.Fixed BBP discharge setting dialog minor bugs
+3.Added PUE Optimal fan mode
+
+-------------------------------------------------------------------------------
+Version 2.9.15 build 121211
+-------------------------------------------------------------------------------
+
+1.Added BBP (Battery Backup Power) management in sensors tab.
+  * FRU
+  * HW monitor
+  * Auto and User dishcarge setting
+
+-------------------------------------------------------------------------------
+Version 2.9.14 build 121115
+-------------------------------------------------------------------------------
+1.Fixed B9DRP wrong picture on BPN-SB-E202 system
+2.Added 3rd auxiliary Firmware Revision for X9 and B9 (Renesas BMC) board
+3.Modified GB 3¡B4 position. #3 at bottom, #4 at top
+
+-------------------------------------------------------------------------------
+Version 2.9.13 build 121026
+-------------------------------------------------------------------------------
+
+1.Updated DC current formula for power supply (SuperBlade)
+2.Updated HDD trap message in TrapReceiver
+3.Fixed OEM SEL wrong message in Group management
+4.Added B9DR6, B9DR7 and B9DRP DIMM temperature sensors
+
+-------------------------------------------------------------------------------
+Version 2.9.12 build 121012
+-------------------------------------------------------------------------------
+
+1.Updated trap receiver email content and multiple email receiver
+2.Added hostname and email password encryption in Trap Receiver
+3.Added exception handling for internal receiver thread
+4.Added B9DRP picture
+5.Minor user management bug fixed
+
+-------------------------------------------------------------------------------
+Version 2.9.11 build 120914
+-------------------------------------------------------------------------------
+
+1. Added IBFDR
+2. Added Fan Speed Mode
+3. Fixed cannot connect issue for some particular Linux environment
+4. Updated B9DRI VBAT & 1.1V sensors limit
+5. Updated B9DRI CPU temp high limit
+6. Added B9DRP
+7. New release package with bundled JRE
+
+-------------------------------------------------------------------------------
+Version 2.9.10 build 120725
+-------------------------------------------------------------------------------
+
+1. Added B9DR7 and B9DRGX
+2. Fixed AMI X9 KVM session token issue
+3. Updated ATEN KVM session issue
+
+-------------------------------------------------------------------------------
+Version 2.9.9 build 120531
+-------------------------------------------------------------------------------
+1. Bug fixed for E103 mid-plane 
+
+-------------------------------------------------------------------------------
+Version 2.9.8 build 120525
+-------------------------------------------------------------------------------
+
+1. Added B9DRT
+2. Fixed user's password length issue on both IPMI and Blade system
+3. Updated X9 OEM SEL (Mem Ecc for Romley EP,EX and EN)
+4. Added E104 mid-plane 
+
+-------------------------------------------------------------------------------
+Version 2.9.7 build 120427
+-------------------------------------------------------------------------------
+
+1. Added X9 OEM SEL
+2. Updated iKVM 1.69 r13 shared library for VM issue (enable *.ima uploader)
+3. Added X9 and B9 Renesas IPMI firmware update function
+4. Improved stability of ATEN firmware update function
+
+-------------------------------------------------------------------------------
+Version 2.9.6 build 120316
+-------------------------------------------------------------------------------
+
+1. Fixed incorrect CPU Vcore voltage of B8DTT in v2.9.5
+
+-------------------------------------------------------------------------------
+Version 2.9.5 build 120308
+-------------------------------------------------------------------------------
+
+1. Added B9DRE and B9DRG blades
+2. Added KVM panel for B9* and BH* blades
+3. Updated CPU sensor color when CPU temperature is high (in Group Management)
+4. Updated format for firmware version
+5. Fixed bug in calculating blade memory size
+
+-------------------------------------------------------------------------------
+Version 2.9.4 build 111230
+-------------------------------------------------------------------------------
+
+1. Updated PMBus information for reduntant charaters
+2. Fixed SOL screen scroll fresh issue
+
+-------------------------------------------------------------------------------
+Version 2.9.3 build 111215
+-------------------------------------------------------------------------------
+
+1. Updated SOL minor issue for text color
+2. Updated iKVM to v1.69 r13
+
+-------------------------------------------------------------------------------
+Version 2.9.2 build 111110
+-------------------------------------------------------------------------------
+
+1. Added 4*Gigabit Switches for ZTE SuperBlade customization
+
+-------------------------------------------------------------------------------
+Version 2.9.1 build 111027
+-------------------------------------------------------------------------------
+
+1. Fixed X9 AMI Virtual Media "cdrom service disabled" issue
+2. Updated Power supply PMBus/FRU status icon and description (on/off)
+
+
+-------------------------------------------------------------------------------
+Version 2.9.0 build 111025
+-------------------------------------------------------------------------------
+
+1. Added PSU PMBus/FRU health monitoring (in Sensors tab)
+2. Fixed reduntant event description in SEL exporting log
+
+
+-------------------------------------------------------------------------------
+Version 2.8.1 build 111003
+-------------------------------------------------------------------------------
+1. Added DEPO customization
+2. Added Itautec customization
+3. Added support new Manufactuerer ID for X9 (KVM tab missing issue)
+4. Added Removing Chassis intrusion for X9
+5. Fixed X9 Sensor name incorrect issue
+
+-------------------------------------------------------------------------------
+Version 2.8.0 build 110802
+-------------------------------------------------------------------------------
+
+1. Added SH7757 Support 
+2. Added AMI X9 KVM console
+3. Updated UTF-8 charset format for exporting file of SEL and Blade SEL
+4. Added checking if user want to delete the default user
+
+-------------------------------------------------------------------------------
+Version 2.7.23 build 110531
+-------------------------------------------------------------------------------
+
+1. Added iKVM v1.69 r6 (work for ATEN KVM firmware v2.29 or above)
+
+-------------------------------------------------------------------------------
+Version 2.7.22 build 110520
+-------------------------------------------------------------------------------
+
+1. Added user cannot delete ID of himself in session
+2. Added GUID and graceful power control for X9 IPMI (KVM & VM are not ready yet)
+
+-------------------------------------------------------------------------------
+Version 2.7.21 build 110412
+-------------------------------------------------------------------------------
+
+1. Update blade hw info for supporting 128G memory size
+2. Added SOL console redirection for supporting 100x31 resolution
+3. Added ZTE customization
+4. Added BHDGT
+5. Updated B8DTG
+
+
+-------------------------------------------------------------------------------
+Version 2.7.20 build 110125
+-------------------------------------------------------------------------------
+
+1. Updated iKVM v1.68 r1
+2. Added B8DTG, BHQG6 for blade system
+
+-------------------------------------------------------------------------------
+Version 2.7.19 build 101123
+-------------------------------------------------------------------------------
+
+1. Fixed failed to get SEL list on AMI fw v1.38 and v2.02
+   
+-------------------------------------------------------------------------------
+Version 2.7.18 build 101118
+-------------------------------------------------------------------------------
+1. Updated -12v sensor and High low limit value
+2. Added iKVM parameter (Virutal Media port 623)
+3. Updated iKVM v1.67 r1
+4. Added commit command for GB reset username and password
+5. Updated SEL table with none auto resize
+6. Added Gb V1.5 commands for Gigabit Switch management
+7. Update 1G and 10G UI for GB V1.5 command
+
+-------------------------------------------------------------------------------
+Version 2.7.17 build 100913
+-------------------------------------------------------------------------------
+
+1. Added 10G Switch
+2. Improved Memory leak issue
+
+-------------------------------------------------------------------------------
+Version 2.7.16 build 100816
+-------------------------------------------------------------------------------
+
+1. Added 20x 1GbE pass thru
+2. Updated iKVM v1.63 r1
+
+-------------------------------------------------------------------------------
+Version 2.7.15 build 100720
+-------------------------------------------------------------------------------
+
+1. Updated default language setting for Trap Receiver
+2. Updated IPMIView documentation
+3. Removed LAN interface option for X7SPA (OnBoard Lan Only)
+4. Fixed X8DTG SDR missing issue(X8DTG-DF Rev 1.3/2.00 ,AMI firmware)
+
+-------------------------------------------------------------------------------
+Version 2.7.14 build 100531
+-------------------------------------------------------------------------------
+
+1. Fixed Trap Receiver gets unknown trap
+2. Updated Blade SEL definition (ie, no AC power, Blade 14~28 supported)
+3. Fixed AMI virtual media cannot work on Windows 7
+4. Updated Blade brand for OEM
+5. Updated iKVM to v1.58 r1
+
+-------------------------------------------------------------------------------
+Version 2.7.13 build 100504
+-------------------------------------------------------------------------------
+
+1. Added ME alert support (In SNMP trap)
+2. Fxied bug of event log for memory ECC error
+3. Added CPU overheat SEL for ATEN FW
+4. Added LAN mode function for AMI FW
+5. Updated unsigned current value of blade power supply
+6. Fxied x8dtu-6tf+ no sensor issue
+7. Updated SMART failure SEL (DISK 0 failure cannot be displayed)
+8. Added B8DTP, B8DT6_OEM, B8DTT_OEM for blade system 
+9. Updated FRU encode function 
+   (Reserve Internal use area, MultiRecord area, OEM custom field)
+
+-------------------------------------------------------------------------------
+Version 2.7.12 build 100205
+-------------------------------------------------------------------------------
+ 
+1. Added OEM updated
+
+-------------------------------------------------------------------------------
+Version 2.7.11 build 100104
+-------------------------------------------------------------------------------
+ 
+1. Added TwinBlade supported
+2. Added B8DTT supported
+3. Removed on-line help function 
+
+-------------------------------------------------------------------------------
+Version 2.7.10 build 091124
+-------------------------------------------------------------------------------
+ 
+1. Fixed KVM and Virtual Media cannot be launched on Linux env
+2. Updated Nehelem CPU low voltage as 0.6v (B8XXX) 
+3. Updated text label for GB switch customization
+  
+-------------------------------------------------------------------------------
+Version 2.7.9.1 build 091116
+-------------------------------------------------------------------------------
+
+1. Fixed hang when open BMC Setting of KIRA
+
+-------------------------------------------------------------------------------
+Version 2.7.9 build 091113
+-------------------------------------------------------------------------------
+
+1. Updated SysRq as combination key in JViewer. Used for Linux console
+2. Updated real keyboard mapping for JP and EN in JViewer softkeyboard setting
+
+-------------------------------------------------------------------------------
+Version 2.7.8 build 091102
+-------------------------------------------------------------------------------
+
+1. Added LAN interface command & GUI
+2. Updated JViewer for supporting Japan keyboard
+3. Enabled F1 keyboard pass to remote side for JViewer
+4. Updated remote flash tool for Hermon/AT FW v1.2.0
+
+-------------------------------------------------------------------------------
+Version 2.7.7 build 091009
+-------------------------------------------------------------------------------
+
+1. Added IBQDR
+
+-------------------------------------------------------------------------------
+Version 2.7.6 build 090929
+-------------------------------------------------------------------------------
+1. Updated CPU ID and sensor formula of BHQIE
+
+-------------------------------------------------------------------------------
+Version 2.7.5 build 090828
+-------------------------------------------------------------------------------
+
+1. Updated ATEN's PEF table setting
+2. Updated sensor formula of BHQIE
+
+-------------------------------------------------------------------------------
+Version 2.7.4 build 090810
+-------------------------------------------------------------------------------
+1. Fixed the issue that disabled SOL privilege for Administrator
+2. Updated JViewer for mouse sync issue
+3. Added Event type (Assertion and De-assertion) in trap receivers
+4. Added BHQIE sensor's table
+5. Updated JViewer for v1.14
+
+-------------------------------------------------------------------------------
+Version 2.7.3 build 090722
+-------------------------------------------------------------------------------
+1. Added Lenovo customization
+2. Updated user table for ATEN's fw
+3. Fixed a bug that cannot receive trap send by ATEN's fw
+4. Updated SDR linearization function for ATEN's fw
+5. Added VLAN function support for AMI & ATENs' fw
+6. Updated PEF table for ATEN's fw
+7. Added B8DTL-E and B8DTL-L
+8. Added flash function(v1.0.1) for ATEN's fw
+9. Updated iKVM to 1.55 r7
+
+-------------------------------------------------------------------------------
+Version 2.7.1 build 090522
+-------------------------------------------------------------------------------
+1. Updated memory ecc SEL for X8 series board
+2. Fixed Operator privilege cannot use KVM Console
+3. Added Baud rate option for HTC IPMI
+4. Added ATEN fw supported
+
+-------------------------------------------------------------------------------
+Version 2.6.61 build 090420
+-------------------------------------------------------------------------------
+1. Added B8DT6/E sensor table
+2. Updated KIRA's KVM video setting for blade only (analogy signal)
+3. Removed color mode options in JViewer
+4. Updated CPU temp for B8DT6/E in CMM management
+5. Added SEL event for CPU temp overheat
+6. Fixed Email alert in Trap Receiver
+7. Updated Blade HW configuration
+8. JViewer migrate to V1.38
+9. Fixed Operator and User privilege cannot login for AMI's fw
+10. Added Chinese language support for blade (CMM) management
+
+-------------------------------------------------------------------------------
+Version 2.6.60 build 090312
+-------------------------------------------------------------------------------
+1. Added retry for KIRA flash
+2. Added DHCP setting for general IPMI (KIRA & Winbond)
+3. Added UID function for Winbond BMC
+4. Added Soft keyboard for Winbond BMC
+5. Updated SNMP setting for Winbond BMC
+6. Updated JViewer keep session command for FW v0.90
+
+
+-------------------------------------------------------------------------------
+Version 2.6.59 build 090204
+-------------------------------------------------------------------------------
+
+1. Added OEM command for CMM's IPMB
+2. Fixed infinite HID Invalid Packet in JViewer 
+3. Added more info for ECC and PCI error SEL event
+
+-------------------------------------------------------------------------------
+Version 2.6.58 build 090107
+-------------------------------------------------------------------------------
+
+1. Added L3 Switch and Icons
+2. Updated FRU code for Writing
+3. Fixed CPU temperature display bug for AMI's fw
+
+-------------------------------------------------------------------------------
+Version 2.6.57 build 081231
+-------------------------------------------------------------------------------
+
+1. Updated AMI fw flash function to v1.2.1. UI refined. 
+2. Fixed CPU not installed display error in AMI's fw
+3. Added Set/Get mouse mode in AMI's KVM menu
+4. Fxied user ID cannot be deleted in AMI's fw
+5. Added B7DCL sensor table
+
+-------------------------------------------------------------------------------
+Version 2.6.56 build 081212
+-------------------------------------------------------------------------------
+
+1. Updated chunk size for AMI fw flash function (v1.2)
+   Fixed onboard LAN flash failure
+2. Added Open in browser menu item in device list
+
+-------------------------------------------------------------------------------
+Version 2.6.55 build 081208
+-------------------------------------------------------------------------------
+
+1. Added session control for AMI Virual Media. Close VM connection when logout
+2. Removed menuitem (exit) in the AMI KVM
+3. Added failure recovery for the AMI fw flash function (v1.1)
+4. Added SIMBL(W) guid and Icon
+
+-------------------------------------------------------------------------------
+Version 2.6.54 build 081118
+-------------------------------------------------------------------------------
+
+1. Added power status in SOL UI
+2. Updated SEL time format for AMI fw (use local time)
+3. Updated SNMP destination setting for AMI fw
+
+-------------------------------------------------------------------------------
+Version 2.6.53 build 081103
+-------------------------------------------------------------------------------
+
+1. Added B7DCL MB
+2. Updated AMD CPU name. (AMD Opteron)
+3. Added B7DCL picture
+4. Removed B7DC3 simbl detection function
+5. Fixed tab key doesn't work on AMI KVM console
+6. Fixed problem that the focus request may not work in the AMI KVM panel
+7. Added YAFU flash function for SIMSOW.
+
+-------------------------------------------------------------------------------
+Version 2.6.52 build 081006
+-------------------------------------------------------------------------------
+1. Added Softkey KVM switch and OSD display
+2. Added AMD CPU in the blade info
+3. Added an option for a off-line device. It is in a special case that the 
+   device discovery cannot find the device. User has an option to connect it. 
+
+-------------------------------------------------------------------------------
+Version 2.6.51 build 080908
+-------------------------------------------------------------------------------
+1. Updated Winbond Chip GUID in the device discovery.
+2. Added 10G pass Thru management UI
+3. Added subnetMask and Gateway field for SIMBL LAN setting via CMM
+4. Updated Power Supply sensor status for AMI fw
+
+-------------------------------------------------------------------------------
+Version 2.6.50 build 080812
+-------------------------------------------------------------------------------
+
+1. Updated winbond GUIDs. Includes both on-board and add-on types.
+2. Updated the blade sensors threshold reading. The blade CPU and system threshold
+   temperature are read from BIOS setting.
+3. Added new CPU text temperature status (low, medium, high and overheat status)
+
+-------------------------------------------------------------------------------
+Version 2.6.49 build 080718
+-------------------------------------------------------------------------------
+
+1. Added B7DC3-IB supported
+2. Added Blade motherboard configuration
+
+
+-------------------------------------------------------------------------------
+Version 2.6.48 build 080704
+-------------------------------------------------------------------------------
+
+1. Added overloading power limit when sending multiple power on command
+2. Added power consumption status command and updated UI
+
+-------------------------------------------------------------------------------
+Version 2.6.47.1 build 080627
+-------------------------------------------------------------------------------
+
+Updated following items for SIMSO-W+: 
+1. Updated manufacturer ID
+2. Fixed a bug that sensor name cannot displayed on sensor and SEL table
+3. Added fps on KVM viewer
+4. Updated SEL time format
+5. Updated BMC configuration
+
+-------------------------------------------------------------------------------
+Version 2.6.47 build 080623
+-------------------------------------------------------------------------------
+
+1. Changed display of power supply watts (1400 -> 1400/1200) when power is off
+2. SIMSO-W+ added
+
+-------------------------------------------------------------------------------
+Version 2.6.46 build 080613
+-------------------------------------------------------------------------------
+
+1. Added Office blade and Enterprise blade mode in CMM setting UI
+2. Changed display of power supply watts (1400 -> 1400/1200)
+
+-------------------------------------------------------------------------------
+Version 2.6.44 build 080515
+-------------------------------------------------------------------------------
+
+1. Added retry mechanism for IPMB call. Make IPMB call more stable
+
+-------------------------------------------------------------------------------
+Version 2.6.43 build 080508
+-------------------------------------------------------------------------------
+
+1. Changed 1.8V to Memory Voltage and changed low limit to 1.34v.
+2. Fixed a false alarm of cpu 2 core A temp and cpu2 core B temp.
+   It shows "CPU2 Core A Temp:Reading out of range" on failure Summary
+   when you install 2 CPUs with PECI feature.
+
+-------------------------------------------------------------------------------
+Version 2.6.42 build 080430
+-------------------------------------------------------------------------------
+
+1. Added function for setting VLAN and DHCP in Blade's SIMBL from CMM
+
+-------------------------------------------------------------------------------
+Version 2.6.41 build 080418
+-------------------------------------------------------------------------------
+
+1. Added BHDME for Blade management
+2. Added VLAN function in general SIM IPMI
+
+-------------------------------------------------------------------------------
+Version 2.6.40 build 080331
+-------------------------------------------------------------------------------
+
+1.Updated virtual media function for i2c lan type.
+
+-------------------------------------------------------------------------------
+Version 2.6.39 build 080329
+-------------------------------------------------------------------------------
+
+1.Updated SEL defintion to support S.M.A.R.T HD failure
+2.Updated SEL defintion to support BIOS post error and progress
+3.Added support for the firmware which has no virtual media and web interface
+4.Updated blade system power supply current. Dividing dc output current by 2
+5.Added Office Blade Supported
+6.Updated B7DC3 icon for 10b and 14b
+7.Added configuration backup/restore/sync for blade and general IPMI
+8.Set flash chunk size to 80 if lan type is share lan1 and lan driver is i2c for
+  firmware upload.
+9.Changed the sensor name 1.2V to CPU VTT (Low/hight limit, 0.99/1.32) in Intel
+   blade sensor table.
+10.Fixed GBSW dispaly power on while the power supply is turned off
+11.Added a workround for B7DC3/B7DCE shows SIMBL is installed while it first
+   pluged into middle plane and powered off.
+
+-------------------------------------------------------------------------------
+Version 2.6.38 build 080201
+-------------------------------------------------------------------------------
+1.Updated CMM time setting (For CMM f/w: v02.02.27 or above)
+2.Updated IPMIView on-line help 
+
+-------------------------------------------------------------------------------
+Version 2.6.37 build 080109
+-------------------------------------------------------------------------------
+
+1.Integrated JavaHelp (On-line Help) to this application. It includes 
+   a. IPMIView user's guide
+   b. IPMIView user's guide for SuperBlade management
+2.Added 14 blades supported
+3.Updated Trap receiver for acccepting Blade SNMP trap
+4.Added B7DW3 and B7DCE MB type for blade
+5.Updated low voltage limit for B7DBE sensors. 
+   a. 1.2V low limit = 0.99V
+   b. 1.8V low limit = 1.40V
+
+-------------------------------------------------------------------------------
+Version 2.6.36 build 071204
+-------------------------------------------------------------------------------
+
+1.Fixed a bug that the Login UI hangs at "retrieving data" while the 
+  "save ID and Password" doesn't selected.
+
+-------------------------------------------------------------------------------
+Version 2.6.35 build 071127
+-------------------------------------------------------------------------------
+
+1.Updated SEL query function
+2.Added OEM command for checking lan type and lan drver
+3.Added CPU reduce power mode UI
+4.Added OEM command for checking failed power supply (OSA f/w)
+5.Added power supply AC over current SEL definition
+6.Added CMM time setting dialog
+7.Added field checking in the Trap receiver email alert
+8.Show red color if DC or AC overcurrent in power supply panel
+9.Added alert in power supply icon if overcurrent occurs
+
+-------------------------------------------------------------------------------
+Version 2.6.34 build 071024
+-------------------------------------------------------------------------------
+
+1.Fixed a bug that the "monitor only" message in the text console shows wrong 
+  blade number
+2.Fixed a bug that SOL with UTF-8 Chinese is easy hang
+3.Removed the occupied session when login to slave CMM
+4.Updated GB and add GB pass thru picture
+
+-------------------------------------------------------------------------------
+Version 2.6.33 build 071017
+-------------------------------------------------------------------------------
+
+1.Replaced AMD blade name as "BHQME".
+2.Updated Blade icon (cmm,AMD blade, IB and power supply)
+
+-------------------------------------------------------------------------------
+Version 2.6.32 build 071016
+-------------------------------------------------------------------------------
+1.added retry packet for device status thread.
+2.Updated UI presentation for DC and AC current positions in power supply
+3.Updated UI presentation for board temp in GB switch
+4.fixed if out put DC power over 130A shows wrong value. It's overflow
+5.Remove unclosed session in the CMM source. Make sure no unclosed session.
+6.Set default language as English
+
+-------------------------------------------------------------------------------
+Version 2.6.31 build 071005
+-------------------------------------------------------------------------------
+
+1.Update the timeout of device status thread to refer the timeout setting from 
+  IPMIView. (default is 5 second). A problem is that sometimes the device status
+  may unstable. It'll change status from on-line to off-line repeatedly in IPMIView.
+  The original device status thread timeout is 2 second timeout individually.
+  However, in some case, the device may not response packet within 2 seconds. For example,
+  It may take up to 3 to 4 seconds for response packet when KVM enable video 
+  optmized encoding.
+               
+  This update may defer the real disconnect device status detected in IPMIView if
+  timeout set more then 10 second.
+ 
+
+-------------------------------------------------------------------------------
+Version 2.6.30 build 071003
+-------------------------------------------------------------------------------
+
+1.Moved getCMMIP() out of the EDT thread. This prevents slow response in 
+  slow network environment
+2.added checking function for making sure all the tab closed if close session
+3.Added OEM command for cehcking if support standard graceful shutdown for OSA
+4.Added standard graceful shutdown for OSA IPMI
+5.Changed blade icons
+
+-------------------------------------------------------------------------------
+Version 2.6.29 build 071001
+-------------------------------------------------------------------------------
+
+- internal test version
+
+-------------------------------------------------------------------------------
+Version 2.6.28 build 070920
+-------------------------------------------------------------------------------
+
+1.Update the device name can't be deleted or modified when a session opened.
+2.Clean all timer and set to null when closing session. both in IPMI and CMM
+3.Fix a bug that device icon didn't refresh automatically.
+
+
+-------------------------------------------------------------------------------
+Version 2.6.27 build 070918
+-------------------------------------------------------------------------------
+1.minor bug fixed for the KVM mouse sync and mode button
+2.Update global session lost problem in virtual media
+3.Fixed a bug that IPMI KVM doesn't close when push close session button in toolbar
+4.Fixed a DC current negative bug
+5.Avoid new session,login or KVM if the max available memory less then 25M byte.
+6.Speed up load time. The JFileChooser takes long time to initiate. Using Lazy load
+7.Update a problem that device list and group tree flash when using the full screen KVM
+8.Fixed a wrong de-assert message on SEL record. Bug from IPMILib
+9.Update and add new Blade SEL message (CPU Core 3,4 and de-assert type message)
+10.Restore device sorting at start. using a properties file to save sort type
+11.Fixed a UI bug when input an error data in the Device Discovering. The error dialog can't close.
+12.Fixed a SOL UI dead lock bug (when SOL keeping dump screen and switch to other 
+   windows application, it may dead lock)
+13.Update Virtual media ISO mount check time. from 5 sec to 10 sec.
+14.UI stability improved
+
+
+
+-------------------------------------------------------------------------------
+Version 2.6.26 build 070823
+-------------------------------------------------------------------------------
+
+1.Add Graceful shut down in blade summary panel
+2.Add power down,graceful shutdown and reset option in the KVM switch panel
+3.Add new drive redirection function. support ISO redirection.
+4.Update KVM mouse sync and mode buttons enable/disable depends on user's 
+  Keyboard/Mouse setting.
+  a.Windows and MAC type will disable mouse sync and mode button. 
+  b.Other OS type will enable mouse sync and mode button
+  
+** New DrvRedirNative.dll also needs to be updated. size ~100K
+
+-------------------------------------------------------------------------------
+Version 2.6.25 Beta build 070815
+-------------------------------------------------------------------------------
+
+1.Update device on-line sorting algorithm. It sort by online and device-type and
+  order by IPMI2.0,SIM IPMI,CMM and SIMBL.
+2.Update GBSW wrong data when CMM state switch from slave to master
+3.Hide CMM time "set" button and keep it read only. 
+  (Will redesign Set function when f/w OEM command available)
+
+-------------------------------------------------------------------------------
+Version 2.6.24 Beta build 070814 InstallShield version 
+-------------------------------------------------------------------------------
+
+Balde System Management Beta Release
+
+1.Deteched window Performance tuning
+2.Adjust dialogs UI and typo
+3.Update IPMIView20.jar content
+
+-------------------------------------------------------------------------------
+Version 2.6.23 Beta build 070809
+-------------------------------------------------------------------------------
+
+1.Update GB pass thru UI with sensor and power control enabled
+2.Update login UI with default focus on Login ID and login by hitting enter key
+3.Update Power supply UI for showing temperature when power supply off             
+4.Update virutal Media UI reset the drive comboBox position after re-fresh
+5.Fixed a bug. wants to mount ISO on drive 2, but,some times, it mount on drive 1.
+6.Colorize blade sensors reading according to sensor's state in blade sensor table
+   
+-------------------------------------------------------------------------------
+Version 2.6.22 Beta build 070807
+-------------------------------------------------------------------------------   
+   
+1.Update virtual media stop button with thread mode.  
+  If firmware does not support Virtual Media OEM command,it should not hang at Event dispatch handler) 
+2.Add keyboard/mouse setting dialog for KVM (KVM console->Options-Keyboard/mouse setting)
+3.Update KVM scroll bar does not show after start
+** Keyboard/Mouse setting should work with cmm 2.0.26 or above
+
+-------------------------------------------------------------------------------
+Version 2.6.21 Beta build 070803
+-------------------------------------------------------------------------------   
+
+1.Add CMM f/w info in the CMM Setting tab
+2.Update SEL timestamp calculation. Add "pre-Init" information.
+3.Update. Power supply summary fan still display when all power off
+4.Update. Power supply DC and AC current display format   
+
+-------------------------------------------------------------------------------
+Version 2.6.20 Beta build 070730
+-------------------------------------------------------------------------------   
+
+1.Add AC and DC output current for 1400w power supply
+2.Add checking power consumption for power on some blades at the same time
+3.Update disconnect process. Will try more time if disconnect discovered.   
+
+-------------------------------------------------------------------------------
+Version 2.6.19 Beta build 070727
+-------------------------------------------------------------------------------   
+
+1.Update JFanPanel,JTempPanel and JVolPanel to display "N/A" if data is not avaiable.   
+  Apply to Power Supply,GB,IB,Summary of Power supply and GB.
+2.Update BrowserControl. AN error dialog will popup if invoke browser failed
+3.Turn off drive redirection and KVM debugging message from console
+4.Fixed a bug that cannot show popup menu when click on blade module icon in Linux 
+5.Check Jtable ArrayIndexOutOfBoundsException problem. Add SwingUtilities.invokeLater() in update()
+
+-------------------------------------------------------------------------------
+Version 2.6.18 Beta build 070725
+-------------------------------------------------------------------------------   
+
+This version should match CMM f/w v 2.02.05 for blade sensor. 
+Or you will see CPU temp is 0, But, actually, the CPU doesn't installed
+
+1.Added KVM mouse sync and mouse mode button on KVM Panel
+2.Change temperature value for no cpu installed. ( 0x81 = -127 )
+3.Update Blade Quad CPU 3,4 voltage formula 
+4.Added extra key combination(Alt+F11) for changing full screen or normal screen mode for KVM
+5.Fixed:Cannot close session from a login failed session (for IPMI)
+6.IPMI Login tab. use swing invokerLater() (for IPMI)
+
+-------------------------------------------------------------------------------
+Version 2.6.17 Beta build 070723
+-------------------------------------------------------------------------------   
+
+1.Update disconnect process 
+2.Update user management UI. Avoid deleting user when only 1 user enabled.
+3.Update UI for different privilege level.
+
+-------------------------------------------------------------------------------
+Version 2.6.16 Beta build 070716
+-------------------------------------------------------------------------------   
+
+1.Fixed Blade management UI memeory leak problem
+2.Solved virual media and KVM screen flash problem
+3.Updated User management UI (do not load at beginning)
+4.Updated firmware update message
+5.Removed slave CMM login message dialog
+6.Updated summary failure UI
+7.Updated summary blade UI buttons status error when cmm status change from slave to master
+8.UI Update and Tuning
+
+-------------------------------------------------------------------------------
+Version 2.6.15 Beta build 070711
+-------------------------------------------------------------------------------   
+
+1.Fixed KVM memory leak problem
+2.Fixed KVM buttons status error
+
+-------------------------------------------------------------------------------
+Version 2.6.14 Beta build 070710
+-------------------------------------------------------------------------------   
+
+1.Added GB pass thorugh check in the failure report
+2.added QHQME MB ssensor in balde
+3.fixed a close session bug
+4.removed flash firmware UI in the CMM panel
+5.updated flash firmware function in the menu item
+6.Fixed some memory leak problem
+
+-------------------------------------------------------------------------------
+Version 2.6.13 Beta build 070629
+-------------------------------------------------------------------------------   
+
+1.Add GB pass through
+2.Update InfiniBand 3.3V AUX and 3.3V reading formula
+3.Add Fan mode control in the Power supply pop menu
+4.Update menu items on each module to match with the user privilege level
+5.Add login progress bar
+
+-------------------------------------------------------------------------------
+Version 2.6.12 Beta build 070626
+-------------------------------------------------------------------------------   
+
+1.Add SIMBL GUID for discovering and device list (An icon added)
+2.Add numOfFans. PS 1400W won't show fan set error
+3.Add flag for IB. Will show sensor if flag bit 0 = 1
+4.Match blade system structure with firmware
+5.Return to login screen if disconnect last for 10 minutes. Avoid retrying
+
+-------------------------------------------------------------------------------
+Version 2.6.11 Beta build 070622
+-------------------------------------------------------------------------------   
+
+1.Show blade sensor reading on blade panel when SIMBL installed. 
+2.Add get/set SIMBL IP on blade panel
+3.Update IB position.The IB switch at the bottom side is IB1 and the top side is IB2
+4.Update bug of VVDD out of range
+
+-------------------------------------------------------------------------------
+Version 2.6.10 Beta build 070615
+-------------------------------------------------------------------------------   
+
+1.Add CMM configuration Panel
+2.Show Master CMM IP in the bottom panel when connect to a slave CMM.
+3.Remove intermal frame of Fan in the sensor tab when connect to SIMBL
+4.Disable CMM time setting when CMM time sync with NTP server
+5.Update MB sensor reading
+6.Add Fan control mode in power supply
+7Connect immediately after clicking KVM console when using SIMxx  
+
+-------------------------------------------------------------------------------
+Version 2.6.09 Beta build 070608
+-------------------------------------------------------------------------------   
+
+1.Add 'M' small icon on blade if SIMBL installed.
+2.Modify GBSW username and password Setting UI.
+3.SEL definition re-structure.
+4.Update device list update function.
+5.Modify master/salve CMM UI. Show SEL and Logon management only on slave CMM
+6.Fixed CMM IP missed.
+7.Detach UI update. will prepare data then show the detach window
+
+-------------------------------------------------------------------------------
+Version 2.6.08 Beta build 070528
+-------------------------------------------------------------------------------   
+
+1.Blade Summary won't show "Power failure" status
+2.A message show up on the text console when user switch to a blade which has simbl installed 
+3.Show fan and fan control on power supply panel (and PS summary) when power supply off. 
+4.Update a power consumption total power display error.
+5.add chassis LED
+6.Add SEL new event for blade sensors
+7.Update CMM UI behavior when CMM master or slave status changed.
+8.Update disconnect process for IPMI
+
+-------------------------------------------------------------------------------
+Version 2.6.06 Beta build 070521
+-------------------------------------------------------------------------------   
+
+1.Fixed a temperature shows "N/A" for SIM IPMI
+2.Update Power supply fan. fan1 as fan1, fan2 as fan2
+3.Update DeviceStatus discovery
+4.Add Balde sensors table on Blade Panel
+
+-------------------------------------------------------------------------------
+Version 2.6.05 Beta build 070430
+-------------------------------------------------------------------------------
+Release date    : 30-04-07
+Release version : 2.6.05 Build 070430
+
+Feature Added
+-------------
+   1.New feature for Balde System Management 
+
+Functions Updated
+-----------------
+   1.change on-line update menu location.
+   2.add IP address format check in the add a new system
+
+-------------------------------------------------------------------------------
+Version 2.5.2 build 061219
+-------------------------------------------------------------------------------
+Release date    : 19-12-06
+Release version : 2.5.2 Build 061219
+
+
+Feature Added
+-------------
+   1.Add system properties, environment variables and time elasped info on the About dialog
+   2.Integrate Trap receiver into IPMIView
+   3.Add peppercon non-kvm feature
+   4.Add online update feature
+  
+
+Functions updated
+-----------------   
+   1.Fixed a bug that SOL can't start on the non-RMCP+ IPMI
+   2.Update IPMIView UI behavior. Press enter on device list to open session
+   3.A work around to fix SOL screen layout bug on Linux paltform
+   4.Update the method of detecting UID button. Change it from detecting MB ID to IPMI OEM command
+   5.Update the way to load drive redirection dll from local file.
+   6.Trim decrypted password. will show exact size of password if save reloaded.
+   7.Add On and Off sign in the tooltip of group tree  
+   8.Update Online update UI   
+              
+-------------------------------------------------------------------------------
+Version 2.5.1 build 061102
+-------------------------------------------------------------------------------
+Release date    : 02-11-06
+Release version : 2.5 Build 061102
+
+Feature Added
+-------------
+   1.Add tool buttons and online information on the group tree
+   2.Add AES-CBC algorigthm for saving user's account information in local file 
+   3.Add save account on login
+   4.Add toolbar in main window
+   
+Functions updated
+-----------------   
+
+   1.fixed: Fixed a bug that the socket resouce exhausted by discover dialog     
+   2.fixed: The device name in the group tree didn't updated when update a device name 
+   3.updated: Add IP field in group management UIs. change hostname as group identity (old way use IP as identity)
+   4.fixed: Event numbmer start from "2". when get part of SEL   
+   5.fixed: keep devices selected after sorting
+   6.updated: Update behavior of Virtual Media UI
+   7.updated: Add close socket function on udpsocket,rmcp,rmcp+ and session controller will 
+               automatically call it in close session method
+   8.fixed: Fixed a out of memeory (java heap space) problem on group management
+   9.fixed: There is no action if no id and pw presented on the group managemnt with a re-fresh checked.
+   
+   
+-------------------------------------------------------------------------------
+Version 2.5 build 061005
+-------------------------------------------------------------------------------
+Release date    : 05-10-06
+Release version : 2.5 Build 061005
+
+Feature Added
+-------------
+   1.Multi-language feature
+   2.Firmware update feature for SIM IPMI
+   3.Virtual Media feature for SIM IPMI
+   4.A SOL privilege management in user's page
+   5.Add 9600 sol buad rate support
+   6.Add utf-8 support for SOL console
+   7.Add utf-8 encode avaiable font in the SOL panel. User can select different font if user hard to tell the font
+   8.Add java version in the about dialog
+   9.Add dynamic monitor device status in the device list
+   10.Add tool buttons and online information on the group tree
+   11.Add AES-CBC algorigthm for saving user's account information in local file 
+   12.Add save account on login
+   
+   
+Functions updated
+-----------------
+   1.fixed: Increase 1 for sequence number and recalculate integrity auth code for retry
+   2.fixed: Fixed an error when delete a user in the middle of user group.
+   3.fixed: Fixed some UI bugs
+   4.updated: Popup a dialog for input user id and password when executing group command
+   5.fixed: When using group and a popup login dialog. An empty id and password will login. fix it
+   6.fixed: A bug come from enabling user and operator for using SOL
+   7.updated: Update if snmp ip addres are not present. add a check to prevent null exception.
+   8.fixed: Add more check code of the Version detection. it prevent that IPMIView login to SIMxx by RMCP.
+   9.fixed: Fixed a bug that the socket resouce exhausted by discover dialog     
+   10.fixed: The device name in the group tree didn't updated when update a device name 
+   11.updated: Add IP field in group management UIs. change hostname as group identity (old way use IP as identity)
+   12.fixed: Event numbmer start from "2". when get part of SEL   
+   13.fixed: keep devices selected after sorting
+   14.updated: Update behavior of Virtual Media UI
+   15.updated: Add close socket function on udpsocket,rmcp,rmcp+ and session controller will 
+               automatically call it in close session method
+   16.fixed: Fixed a out of memeory (java heap space) problem on group management
+   17.fixed: There is no action if no id and pw presented on the group managemnt with a re-fresh checked.
+
+-------------------------------------------------------------------------------
+Version 2.5 Beta build 060712
+-------------------------------------------------------------------------------
+Release date    : 12-07-06
+Release version : 2.5 Beta Build 060712
+   
+Functions updated
+-----------------
+   1.fixed: fixed discover non-stop problem since build 060629
+   2.modify: detecting a duplicate packet from BMC
+
+
+-------------------------------------------------------------------------------
+Version 2.5 Beta build 060629
+-------------------------------------------------------------------------------
+Release date    : 29-06-06
+Release version : 2.5 Beta Build 060629
+
+
+Feature Added
+-------------
+   1.Group management added
+   2.Support SIM** IPMI and KVM console
+   
+
+-------------------------------------------------------------------------------
+Version 2.4 build 060502
+-------------------------------------------------------------------------------
+Release date    : 10-05-06
+Release version : 2.4 Build 060502
+
+Functions updated
+-----------------
+   1.fixed: sensor flash rate didn't change after change value
+   2.added: write FRU function
+   3.added: Blink UID LED function in IPM Device tab
+   4.fixed: The layout of sensor can't restore to saved location
+
+-------------------------------------------------------------------------------
+Version 2.4 build 060313
+-------------------------------------------------------------------------------
+Release date    : 14-03-06
+Release version : 2.4 Build 060313
+
+Functions updated
+-----------------
+   1.updated: SOL text console request focus when switch managed system.
+   2.fixed: getting SNMP destination hang when using peppercon IPMI.
+   3.add: Add "copy all" and "paste" function in IPMIView text console
+   4.fixed: 'a'(append),'i'(insert) command in vi can't work. 
+     And this cause screen word shift.
+   5.fixed: fixed the scroll problem when using ':sp' in vi.
+     Implements Scrolling Region ESC [ pt;pb r command
+   6.added: add Home,End,Insert,Delete,PgUp,PgDn etc key map for linux system.
+     press right click on text console
+   7.fixed: fixed "--INSERT--" , "--REPLACE--" can't display on VI editor.
+   8.added: enable User and Operator privilege could use SOL when using RMCP (not RMCP+)
+   9.updated: Modify polling ACPI for reseting problem of ESB2.Will stop ACPI polling then resume it
+   10.update: Modify the way of open IPMIView. Forcing system to redraw IPMIView screen. 
+      This problem is occured on windows 2003 server
+   11.fixed: Cold reset hangs when the sol is activating. adjust the cold reset procedure.
+   12.updated: Use Cipher Suite(1,0,0) for SOL login when the encryption checkbox is not checked.
+      It is used for IPMI firmware 2.2
+   13.updated: block empty user id when login.
+
+
+-------------------------------------------------------------------------------
+Version 2.3 build 051121
+-------------------------------------------------------------------------------
+Release date    : 11-21-05
+Release version : 2.3 Build 051121
+
+Functions updated
+-----------------
+   1.updated: remove internal frame icon of sensors.
+
+Feature Added
+-------------
+   1.Trap Receiver 2.0 added
+
+-------------------------------------------------------------------------------
+Version 2.3 build 051017
+-------------------------------------------------------------------------------
+Release date    : 10-17-05
+Release version : 2.3 Build 051017
+
+Functions updated
+-----------------
+   1.Change stopping SOL approach. Send a "zero" to IPMIView self. CRService receive this packet
+     then stop self thread.
+   2.SOL packet retry machanism. fix it to correct running.
+   3.Adjust UI for linux platform.
+   4.Add a dialog while user wants to update LAN MAC
+   5.SOL queue sticked when user key in during reset. call storage.allowGet() in 
+     checkFirstSOLPacketAfterReboot()
+   6.Disable text console for user privilege equals "user" and "operator". This is due to 
+     only administrator can set SOL configuration. then we have to set this before start SOL
+   7.The text console will automatic get foucs when user click text console page. 
+     Avoid miss manipulate when they want to enter BIOS.
+   8.The max size of user accounts adjust to 10.
+   9.Change Clear SEL algorithm (refer from OSA)
+
+Feature Added
+-------------
+   1.IPMI 2.0 RMCP+ protocol added
+
+
+-------------------------------------------------------------------------------
+Version 2.2 build 050503
+-------------------------------------------------------------------------------
+Release date    : 05-03-05
+Release version : 2.2 Build 050503
+
+Bug Fixed
+----------
+   1.The control or function key (F1,F2,up,down etc) will not be sent to BMC separately. 
+     add puts() in sol.Storage class.The complex chars will send to BMC by the same packet.
+     Fixed bios screen abnormal in h8 serial board.user will use direction key to manipulate menu,
+     aka AMI BIOS.
+   2.Press "X" button will not close SOL(or UOL) when SOL(or UOL) is running.
+     Change return value from checkChangeConfiguration(). It is a bug.
+   3.Update SOL to let it work on H8 serial Board (AMI BIOS)
+   4.Disable Timer bar when retry send packet.
+   5.If the packet full retry is failed for 5 time. the IPMIView will close the session.
+   6.Reduce font size of VOL panel. avoid miss understand of "-12" value.
+   7.If send pocket failed, will resend pocket after 8 second. total retry 30 time.
+   8.Small bug of retry machanism. "Get ACPI Command" & "Login Action" will not retry pocket.
+    Other command will retry send packet. "Get ACPI command" will send every 5 time. 
+    Don't let it affect other command. Don't let "Login Action" retry packet is for quickly response
+    to user.
+
+Feature Added
+-------------
+   1.Add a dialog for timeout & retry.
+   1.Add a "Detect..." button in Discovery IPMI Device. Searching for local LAN.
+   
+
+-------------------------------------------------------------------------------
+Version 2.2 build 050406
+-------------------------------------------------------------------------------
+Release date    : 04-06-05
+Release version : 2.2 Build 050406
+
+Bug Fixed
+----------
+   1.bug fixed:A timer to close IPMIView.
+   2.When user press Power reset command (include graceful) and SOL is runing.
+      we should disable "Stop" in Text C.R. page. It prevent hang when nic is initializing.
+      "Stop" will enable after ipmiview receive a frist SOL packet from BMC.
+   3.SOL type missing char and hang problem      
+   
+
+Feature Added
+-------------
+   1.Add a code for close SOL if user press "X" button
+   2.Add a dialog "Are you sure to quit? " if user press "X" button
+   3.Add a dialog when user press clear chassis intruition
+   4.update: update ACPI status icon and add text (on | off)
+   5.Add a delay time for check ACPI status when user press power command in IPM Device page
+   6.Add a buffer sender & sequence control for SOL.
+	
+
+-------------------------------------------------------------------------------
+Version 2.2 build 050115
+-------------------------------------------------------------------------------
+Release date    : 01-15-05
+Release version : 2.2 Build 050115
+
+Bug Fixed
+----------
+   1.bug fixed: Fix the direction key & scroll page problem in vi editor
+
+
+-------------------------------------------------------------------------------
+Version 2.2 build 041117
+-------------------------------------------------------------------------------
+Release date    : 11-17-04
+Release version : 2.2 Build 041117
+
+Bug Fixed
+----------
+   1.bug fixed: SOL in Linux. A new line '\n' will cause only update bottom line.
+                After the bug fixed, the original screen will keep the color style 
+                after scrolling the screen.
+   2.bug fixed: Fix the linux "clear" command can't work in SOL Text conole redirection
+                (bug in ESC[J handlers)
+   3.bug fixed: Time stamp wrong in SEL event table
+   4.Update Code:update SOL key to fit linux environment. 
+                 "Enter" key can't receive "OD OA" by linux text console redirection.
+                 Now only send "OD" for Enter will work well.
+
+-------------------------------------------------------------------------------
+Version 2.1 build 041104
+-------------------------------------------------------------------------------
+Release date    : 11-04-04
+Release version : 2.1 Build 041104
+
+Bug Fixed
+----------
+1. IPMIView:Add synchronized scope for the keep session command. It prevent
+   to get same sequence ID from other threads.
+
+Feature Added
+-------------
+1. TrapReceiver: Center the TrapReciver Window in the screen 
+
+
+-------------------------------------------------------------------------------
+Update History:
+-------------------------------------------------------------------------------
+[Ver 2.1 Build 04102601]
+1.function added: add a timeout counter for count time after sent IPMI command
+2.Bug Fixed: SEL time value depends on TimeZone and Daylight save Time.
+3.Update Code:disable retry and "no response count" when user are logining. 
+  response count will cause the bad feeling when user miss type their login id & pw)
+4.Update Code:add retry time to timeout.properties
+5.Update Code:Close session immediately after press OK on dialog of 
+  "no response from BMC" (when BMC no longer response)
+  Actually , we ignore the "CloseSession" command for BMC. 
+  (If noResponseCount > 1 , then will ignore "CloseSession")
+6.Set UDPSocket parameter : Timeout = 30 sec, RetryTime = 5 
+7.Update Code: Firmware version consistence, all use HEX type to display (ex: 0e.40)
+
+[Ver 2.1 Build 04100601]
+1.Bug Fixed : In the SOL ,Award BIOS will send a invalid cursor position.
+  SOL will stop running. Added a code segment to protect such a situation.
+2.Code added : A dialog will popup when console redirection cannot start
+  due to the managed server may be turned off.
+3.Code added : Force to close IPMIView window by adding "system.exit(0)"
+  in close windows event handler.
+4.Bug Fixed : The background of tabpanel of host will become white color
+  after restart the session.
+5.Bug Fixed : 
+  when the BMC no response from some request (maybe there are no standby
+  power in that time or turn off machine), the IPMIView windows will hangs 
+  and can't be manipulated. Below is solution :
+   a.Use java.util.Timer instead javax.swing.Timer for periodically request.
+     (ACPI,Keep session command etc.)
+   b.Use Thread approach in all AWT event handler.
+6.Bug Fixed : Password dialog bug. when we add a new ID but fill no password.
+  this dialog will close. The dialog should popup a message to say "the 
+  password doesn't match your confirm password"
+7.Function added : add a retry mechanism for cover the packet loss problem.
+ 
+[Ver 2.00 Build 04090801]
+1.Bug fixed: "Unsupport command error, complete code = -60" dialog will show
+  after execute graceful power command (the condition is SEL full)
+  The dialog message will be "out of space. Please clear all SEL entries 
+  in the tab of Event Log."
+[Ver 2.00 Build 04082701]
+1.Bug fixed: The popup menu for the Device List can't work in linux.
+2.Bug fixed: when user move internal frame and save layout in sensors page,
+  after switch out & switch return to sensor page The layout will reset to 
+  original locate. (should keep the last modify )
+ 
+[TrapReceiver Build 04083001]
+1.Process "Always on top" dialog problem
+ 
+[setup file]
+Setup file upload to VSS $/IPMI20/disk1
+ 
+[Ver 2.00 Build: 04081801]
+1.SOL Screen update:
+  Reverse color (FG:black, BK:light gray) added. (now, you can see high light
+  item from windows 2003 Advanced option menu)
+
+[Ver 2.00 Build: 04081701]
+1.SOL Function update:
+    Keyboard function keys(F5 ~ F12, INSERT,DELETE,HOME,END,PGUP AND PGDN) 
+    Follow Microsoft's "Windows Platform Design Notes".
+    Testing result:
+      a.F5,F6,F9,F10,Home,End,PgUp,PgDn are working on Phoenix BIOS. 
+       (AMI , Award not yet test)
+      b.F8 is working on windows 2003  [04081701]
+ 
+[Ver 2.00 Build: 04081201]
+1.Bug fixed: Sensors still refresh after change to other tab. 
+  Only on IPMI2.0 has this bug.
+2.Build "PogoRemote" Version.[04081201]
+
+[Ver 2.00 Build: 04081101]
+1.function update: History chart will updated when sensors refleshed.
+  not periodically update by second
+2.function update: Disable all the button on SEL Page when running
+  "Get" or "Export" SEL.
+3.bug fixed: The timer for refresh sensors still working after 
+ "logout" or "close session"
+4.function added: If there are no responses for 5 time successively 
+  from the BMC system.The session maybe lost. 
+  IPMIView will close session automatically. [04081101]
+ 
+[Ver 2.00 Build: 04080401]
+1.remove "IPMI Version unknown" dialog
+2.Add "Search Option" on Discover Dialog
+3.add/delete/modify alert,warning user to save to modification[04072601]
+4.add History chart for Fan/Voltage/Temperature
+5.update BMC Cold reset Dialog message
+6.Add history chart to IPMI 1.5 sensor page
+7.Bug fixed for History chart between power down and power up
+8.Update Trap Receiver for decode IPMI 2.0 SNMP (not 100%)
+9.Update "Break" to "BREAK" icon
+10.Use buffered Image to enhance the efficiency of FAN/VOL/TEMP Meter.
+   Especially when move the internal frame on sensors page [04080401]
+
+[Ver 2.00 Build: 04072201]
+1.update SOL code to check repeat SOL packet from BMC. It prevent 
+  repeat characters displayed on screen.
+2.eliminate blinking effect on SOL screen
+3.change new logo & background
+ 
+[Build: 04071401]
+1.Use time zone offset to correct SEL timestamp value
+2.Use "Get Channel Authentication Capabilities" command to discovery IPMI 1.5 & 2.0
+3.Bug Fixed: Answer "No" from BMC ColdReset will cause close session.
+4.Bug fixed: Resizing the 3 SNMP Destinations for IPMI 2.0
+5.SEL page: change "From 1" --> "From 0"  for IPMI 2.0
+6.Sensor Page: Temperatures display "N/A" when power is down. 
+7.User Page: add FRU Panel
+ 
+[Build:04062901]
+1.Bug fixed: Close session in menu bar will cause tab sheet can't work well.
+2.Logo, Background & some icons changed.
+3.Bug fixed: Browser starting failed in linux system 
+  when clicking on "Supermicro" icon.
+4.New user has "User" privilege
+5.Change Users Tab Layout
+6.Adjust Voltage Sensor display when power is down
+7.Discovery function update: Use IPMI 1.5 method detect BMC first,
+  if no response get, try IPMI 2.0 method then.
+8.Add TrapReceiver to project
+9.Add IP format checking in SNMP setting
+ 
+[Build:04062101]
+1.In the IPMIView main screen , Left group List , 
+  Session Menu and Tab sheet all sync for display.
+2.Bug fix: add & delete user will cause user data error in BMC.
+3.Close session UI immediately after BMC cold reset.
+4.change power control icon.
+5.bug fix. user can't login unless user privilege is "administrator".
+  IPMIView will try to use different level to login , 
+  choose the max level for current login user
+  but this action will spend more login time.
+6.IPMIView will generate log file in same dir after start up. just for debug.
+7.change icon for IPMIView win32 native executable version
+
+[Build:04061501]
+1.Fix Fan UI Display in IPMI 1.5 & 2.0
+2.add Tab sheet in main screen , it easy for display and control to different machine.
+3.add icon of supermicro logo , visiting supermicro web site by press the logo.
+ 
+[Build:04061201]
+1.add "Clearing the Chassis Intrusion Falg" for IPMI 2.0 in JSensorPanel
+2.Fix sensor panel gray out while power down and power up.
+3.Update Graceful power control & clear chassis intrusion. it's work well now. *
+  (power down -> power up, sensors will show correct value after 30 sec)
+4.Fix IPMIView hangs after logout button pressed
+5.Fix SELDevice20 clear all event, table's content not clear.
+6.Fix SELDevice clear all event, table's content not clear.
+7.Fix fan meter reading value display (2.0 & 1.5 reading format are diff. ) *
+8.paging setting set to invisible
+9.add fan animation & ACPI Power on/off status icon
+10.IPMI Device Discover search for IPMI 1.5 & 2.0
+11.IPMIView Native executable version support. Both Window & Linux
+   version are provided.
+  
+[Build:04060801]
+1.Integrate with IPMI 1.5 *
+2.add Graceful Power Control Commands
+3.Fix "Close session unworkable problem" in Session menu.
+4.Enhance Sensors Meter look & feel
+
+
+ OS Compatibility list
+
+-------------------------------------------------------------------------------
+Windows 7 64bit
+Windows  server 2008R2 64bit
+Windows  server 2008 32bit
+Windows  server 2012 64bit
+Windows 8 64bit
+Ubuntu-12.04 64bit
+Ubuntu-12.04 32bit
+Fedora-17 32bit
+Fedora-17 64bit
+CentOS 6.3 64bit
+CentOS 6.3 32bit
+openSUSE-12.1 32bit
+openSUSE-12.1 64bit
+Red Hat 6.4 64bit
+Red Hat 6.4 32 bit
+-------------------------------------------------------------------------------
+
+ Blade Support List
+ 
+-------------------------------------------------------------------------------
+SuperBlade:
+------------
+B10DRI
+B10DRC
+B9DR6
+B9DRG
+B9DRGX
+B9DRT
+B9QR7
+B8DT6
+B8DTG
+B8DTT
+B7DBE
+B7DCL
+BHDGT
+BHDME
+BHQG6
+BHQIE
+BHQME
+------------
+MicroBlade:
+------------
+B1DRI
+B1SA4F
+B1SD2
+B1SL1
+-------------------------------------------------------------------------------
